@@ -1,57 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>只在一边或两边显示盒子阴影</title>
-	<style type="text/css">
-.box-shadow {
-    background-color: #FF8020;
-    width: 160px;
-    height: 90px;
-    margin: 100px auto;
-    /* margin-top: -45px;
+  <head>
+    <meta charset="UTF-8" />
+    <title>只在一边或两边显示盒子阴影</title>
+    <style type="text/css">
+      .box-shadow {
+        background-color: #ff8020;
+        width: 160px;
+        height: 90px;
+        margin: 120px auto;
+        /* margin-top: -45px;
     margin-left: -80px;
     position: absolute;
     top: 50%;
     left: 50%; */
-}
-.box-shadow::before {
-    content: "";
-    width: 150px;
-    height: 1px;
-    margin-top: 88px;
-    margin-left: -75px;
-    position: absolute;
-    left: 50%;
-    z-index: -1;
-   position: absolute;
-    /* -webkit-box-shadow: 0px 0px 8px 2px #000000; */
-       /* -moz-box-shadow: 0px 0px 8px 2px #000000; */
-            box-shadow: 0px 0px 8px 2px #000000;
-}
-.box-shadow-one{
-    background-color: #FF8020;
-    width: 260px;
-    height: 100px;
-    margin: 100px auto;
-
- }
-.box-shadow-one::before{
-    content: "";
-    width: 1px;
-    height: 90px;
-    position: absolute;
-    margin-left: -130px;
-    margin-top: 5px;
-    left: 50%;
-    z-index: -1;
-    box-shadow: 0px 0px 8px 2px #000000;
-
-}
-</style>
-</head>
-<body>
-	<div class="box-shadow"></div>
+      }
+      .box-shadow::before {
+        content: "";
+        width: 150px;
+        height: 1px;
+        margin-top: 88px;
+        margin-left: -75px;
+        position: absolute;
+        left: 50%;
+        z-index: -1;
+        position: absolute;
+        /* -webkit-box-shadow: 0px 0px 8px 2px #000000; */
+        /* -moz-box-shadow: 0px 0px 8px 2px #000000; */
+        box-shadow: 0px 0px 8px 2px #000000;
+      }
+      .box-shadow-one {
+        background-color: #ff8020;
+        width: 260px;
+        height: 100px;
+        margin: 100px auto;
+      }
+      .box-shadow-one::before {
+        content: "";
+        width: 1px;
+        height: 90px;
+        position: absolute;
+        margin-left: -130px;
+        margin-top: 5px;
+        left: 50%;
+        z-index: -1;
+        box-shadow: 0px 0px 8px 2px #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-shadow"></div>
     <div class="box-shadow-one"></div>
-</body>
+  </body>
 </html>
